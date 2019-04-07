@@ -1,4 +1,4 @@
-import { useMemo, useLayoutEffect } from 'react'
+import { useMemo, useLayoutEffect, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
 //
@@ -37,7 +37,7 @@ export const usePagination = props => {
     ]
   } = props
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     setState(
       old => ({
         ...old,
